@@ -4,6 +4,7 @@ import lebron17 from '../images/lebron17.jpg';
 import airmax90 from '../images/airmax90.jpg';
 import kyrie6n7 from '../images/kyrie6n7.jpg';
 import foamposite from '../images/foamposite.jpg';
+// connecting redux with home component buttons
 import { connect } from 'react-redux';
 import { addBasket } from '../actions/addActions'
 
@@ -15,6 +16,7 @@ const Home = (props) => {
             <img src={jordan270} alt="jordan black sneakers" width="200" /> 
             <h3>Jordan Mars 270</h3>
             <h3>$270.00</h3>
+            {/* props.addBasket adds a on click action to adding to basket from addActions file  */}
             <a onClick={props.addBasket} className="addToCart cart1" href="#">Add to Cart</a>
         </div>
         <div className="image">
@@ -44,4 +46,5 @@ const Home = (props) => {
     </div>
 )
 }
+
 export default connect(null, {addBasket})(Home);
