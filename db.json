@@ -1,0 +1,67 @@
+{
+    "products": [
+    {
+        "id": 1,
+        "sku#": 94379398339,
+        "title": "Jordan Mars 270",
+        "description": "",
+        "availableSizes": ["9", "9.5", "10", "11"],
+        "price": 270,
+        "isFreeShipping": true
+    },
+  
+    {
+        "id#": 2,
+        "sku#": 94370030321,
+        "title": "LeBron 17",
+        "description": "",
+        "availableSizes": ["10", "13", "13.5"],
+        "price": 200,
+        "isFreeShipping": true
+    },
+  
+    {
+        "id#": 3,
+        "sku#": 94591030391,
+        "title": "Zoom Freak 1 Soul Glo",
+        "description": "",
+        "availableSizes": ["8", "11", "15"],
+        "price": 71.9,
+        "isFreeShipping": true
+      },
+  
+      {
+        "id#": 4,
+        "sku#":92440035301,
+        "title": "YEEZY BOOST 350 V2 'ZEBRA'",
+        "description": "",
+        "availableSizes": ["7", "10", "10.5","12"],
+        "price": 25.9,
+        "isFreeShipping": false
+},
+  
+{
+        "id#": 5,
+        "sku#":92501135301,
+        "title": "Nike Mamba Fury Alternate Bruce Lee",
+        "description": "",
+        "availableSizes": ["11", "11.5"],
+        "price": 10.9,
+        "isFreeShipping": false
+},
+  
+{
+        "id#": 6,
+        "sku#": 6090484789343891,
+        "title": "Nike MAG ‘Back to the Future",
+        "description": "",
+        "availableSizes": ["12"],
+        "price": 70000,
+        "isFreeShipping": false
+    
+    }
+]
+
+}
+  
+      

@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+
+}
+header {
+    background-image: url('./images/sneakerking-logo.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    height: 120px;
+    position: relative;
+}
+.overlay {
+    position: absolute; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right:0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(10, 10, 10, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li a{
+    padding: 10px;
+    background-color: rgb(180, 166, 110);
+    text-decoration: none;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.addToCart{
+    position: absolute;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    background-color: darkgrey;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
 }
+
